@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
       const { slug } = page.node
 
       createPage({
-        path: `/blog/${slug}/`,
+        path: `/${slug}/`,
         component: path.resolve(`./src/templates/page.js`),
         context: {
           slug: slug
